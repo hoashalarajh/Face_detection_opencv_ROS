@@ -43,11 +43,11 @@ cd ~/ros2_ws/src
 ```
 
 2. Clone this repository into your `src` directory:
-1. **Navigate** to the **main** page of the target repository
-2. **Locate** the green `Code` button positioned above the list of files and directories.
-3. **Click** the **Code button** to expand a dropdown menu.
-4. **Select** the **Download ZIP** option from the menu. This action initiates the download of the entire repository's contents at the current commit as a single compressed file.
-5. **Extract** the downloaded **.zip** file to your desired `src` directory.
+  1. **Navigate** to the **main** page of the target repository
+  2. **Locate** the green `Code` button positioned above the list of files and directories.
+  3. **Click** the **Code button** to expand a dropdown menu.
+  4. **Select** the **Download ZIP** option from the menu. This action initiates the download of the entire repository's contents at the current commit as a single compressed file.
+  5. **Extract** the downloaded **.zip** file to your desired `src` directory.
 
 6. Build package:
 ```bash

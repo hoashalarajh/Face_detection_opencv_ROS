@@ -45,7 +45,7 @@ cd ~/ros2_ws/src
    * **Locate** the green `Code` button positioned above the list of files and directories.
    * **Click** the **Code button** to expand a dropdown menu.
    * **Select** the **Download ZIP** option from the menu. This action initiates the download of the entire repository's contents at the current commit as a single compressed file.
-   * **Extract** the downloaded **.zip** file to the `src` directory which you created in the step 1).
+   * **Extract** the downloaded **.zip** file to the `src` directory which you created in the step 1.
 
 3. Build package:
 ```bash

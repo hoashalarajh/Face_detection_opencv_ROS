@@ -13,6 +13,12 @@ This ecosystem is separated into two distinct ROS 2 Python nodes to maintain mod
 1. **`video_publisher`**: Interfaces with the system's webcam (or a video file), captures frames, converts them using `cv_bridge`, and publishes them as `sensor_msgs/Image` to the `/video_frames` topic.
 2. **`face_detector`**: Subscribes to the `/video_frames` topic, converts the ROS messages back to OpenCV format, processes the grayscale image through a pre-trained Haar Cascade classifier, and publishes the live count of detected faces as `std_msgs/Int32` to the `/face_count` topic.
 
+### The system architecture is as follows:
+<img width="1163" height="72" alt="rosgraph" src="https://github.com/user-attachments/assets/c8320c02-9e50-4fe0-900c-2002cedb7fdf" />
+
+---
+
+
 ## Prerequisites
 
 * **OS:** Ubuntu 22.04

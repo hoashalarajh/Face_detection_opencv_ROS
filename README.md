@@ -14,9 +14,11 @@ This ecosystem is separated into two distinct ROS 2 Python nodes to maintain mod
 2. **`face_detector`**: Subscribes to the `/video_frames` topic, converts the ROS messages back to OpenCV format, processes the grayscale image through a pre-trained Haar Cascade classifier, and publishes the live count of detected faces as `std_msgs/Int32` to the `/face_count` topic.
 
 ### The system architecture is as follows:
-<img width="1163" height="72" alt="rosgraph" src="https://github.com/user-attachments/assets/c8320c02-9e50-4fe0-900c-2002cedb7fdf" />
+
+<img width="1920" height="1200" alt="Screenshot from 2026-02-28 08-21-51" src="https://github.com/user-attachments/assets/15bac6c2-a6c1-4602-a49e-59bdab2c5dcd" />
 
 ---
+
 
 
 ## Prerequisites

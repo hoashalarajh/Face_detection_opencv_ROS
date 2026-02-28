@@ -104,7 +104,7 @@ ros2 topic echo /face_count
 ---
 
 # Configuration Notes
-* Here we read the video from a video file. To do so, please change the line `video_path = os.path.expanduser('~/Downloads/walking.mp4')` in the file `video_publisher.py` to the video file that you want to experiment with.
+* TO read a video file, please change the line `video_path = os.path.expanduser('~/Downloads/walking.mp4')` in the file `video_publisher.py` to the video file that you want to experiment with.
 
 * Haar Cascade Path: The `face_detector` node points to the absolute Ubuntu system path for the OpenCV Haar Cascades `(/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml)`.
 

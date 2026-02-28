@@ -1,4 +1,4 @@
-# Face_detection_opencv_ROS2
+# Face Detection in ROS2 - Video feed and Real-time detection and update
 
 # ROS 2 Real-Time Face Detection Ecosystem
 

@@ -25,3 +25,65 @@ sudo apt update
 sudo apt install ros-humble-cv-bridge ros-humble-sensor-msgs ros-humble-std-msgs
 ```
 
+---
+
+# 📦 Installation & Build
+1. Create a ROS 2 workspace (if you don't have one):
+``` bash
+mkdir -p ~/ros2_ws/src
+cd ~/ros2_ws/src
+```
+
+2. Clone this repository into your `src` directory:
+```bash
+git clone [https://github.com/yourusername/face_detection_pkg.git](https://github.com/yourusername/face_detection_pkg.git)
+```
+
+3. Build package:
+```bash
+cd ~/ros2_ws
+colcon build --packages-select face_detection_pkg
+```
+
+4. Source the workspace:
+```bash
+source install/setup.bash
+```
+# 💻 Usage
+
+The easiest way to run the ecosystem is using the provided ROS 2 launch file. This will spin up both the video publisher and the face detector simultaneously.
+
+```bash
+ros2 launch face_detection_pkg face_detection.launch.py
+```
+
+(Optional) Open a separate sourced terminal to monitor the raw face count data being published in real-time:
+
+```bash
+ros2 topic echo /face_count
+```
+
+---
+
+## Another Method (Without Launch File):
+
+To run the nodes individually for debugging, you can start them in separate terminals:
+
+
+### Terminal 1:
+
+```bash
+source install/setup.bash
+ros2 run face_detection_pkg video_publisher
+```
+
+### Terminal 2:
+
+```bash
+source install/setup.bash
+ros2 run face_detection_pkg face_detector
+```
+
+---
+
+

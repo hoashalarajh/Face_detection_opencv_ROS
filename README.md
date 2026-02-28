@@ -1,6 +1,6 @@
 # Real-time Face Detection in ROS2 Ecosystem
 
-A modular ROS 2 (Humble) package that captures a live video feed, broadcasts the frames across the ROS network, and performs real-time face detection using OpenCV Haar Cascades. This package serves as a foundational vision module for human-robot interaction and social robotics applications.
+A modular Robot Operating System 2 - ROS 2 (Humble) package that captures a live video feed, broadcasts the frames across the ROS network, and performs real-time face detection using OpenCV Haar Cascades. This package serves as a foundational vision module for human-robot interaction and social robotics applications.
 
 
 

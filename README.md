@@ -86,4 +86,18 @@ ros2 run face_detection_pkg face_detector
 
 ---
 
+(Optional) Open a separate sourced terminal to monitor the raw face count data being published in real-time:
 
+```bash
+source install/setup.bash
+ros2 topic echo /face_count
+```
+
+---
+
+# ⚙️ Configuration Notes
+* Here we read the video from a video file.
+
+* Haar Cascade Path: The `face_detector` node points to the absolute Ubuntu system path for the OpenCV Haar Cascades `(/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml)`.
+
+  ---

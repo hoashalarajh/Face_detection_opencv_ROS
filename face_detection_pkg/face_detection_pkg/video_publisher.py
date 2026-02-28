@@ -12,9 +12,10 @@ class VideoPublisher(Node):
         # publsih at 10 Hz
         self.timer = self.create_timer(0.1, self.timer_callback)
 
-        # Replace with your actual file name in Downloads
-        video_path = os.path.expanduser('~/Downloads/walking.mp4')
-        self.cap = cv2.VideoCapture(video_path)
+        # Replace the path with your actual file path
+        # video_path = os.path.expanduser('~/Downloads/walking.mp4')
+        # now we could direct the video feed from our WebCam
+        self.cap = cv2.VideoCapture(0) # replace 0, with "video_path" to feed the video from any video file
         self.bridge = CvBridge()
 
     def timer_callback(self):

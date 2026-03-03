@@ -97,7 +97,6 @@ ros2 run face_detection_pkg face_detector
 (Optional) Open a separate sourced terminal to monitor the raw face count data being published in real-time:
 
 ```bash
-source install/setup.bash
 ros2 topic echo /face_count
 ```
 
